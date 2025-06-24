@@ -1,55 +1,151 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>Royal Star - YouTube Channel</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Royal Star Institute</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-    <!-- Header Section -->
+    <!-- Header -->
     <header>
-        <img src="/logo.png" alt="Royal Star Logo" class="logo">
-
-        <h1>🌟 Royal Star 🌟</h1>
-        <p>आपका पसंदीदा YouTube चैनल - एंटरटेनमेंट, शॉर्ट्स और मोटिवेशन!</p>
-
+        <img src="logo.png" alt="Royal Star Logo" class="logo">
+        <h1>Welcome to Royal Star </h1>
+        <p>Your Future Starts Here</p>
     </header>
 
-    <!-- Videos Section -->
-    <section class="videos">
-        <h2>🎬 हमारे वीडियो</h2>
-        <div class="video-grid">
-            <div class="video-card">
-                <img src="https://img.youtube.com/vi/dQw4w9WgXcQ/hqdefault.jpg" alt="Video Thumbnail">
-                <a href="https://www.youtube.com/watch?v=6zy5-U95waU&t=336s" target="_blank">वीडियो देखें</a>
-            </div>
-            <!-- आप और वीडियो जोड़ सकते हैं इसी तरह -->
+    <!-- About Us -->
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Royal Computer & Coaching Institute, Moga is dedicated to providing high-quality education in computer skills, languages, and competitive exam preparation. Join us to learn and grow.</p>
+    </section>
+
+    <!-- Courses -->
+    <section class="courses">
+        <h2>Courses We Offer</h2>
+        <ul>
+            <li>Basic Computer Course</li>
+            <li>Web Designing (HTML, CSS, JavaScript)</li>
+            <li>Tally + GST</li>
+            <li>Typing Practice (English/Punjabi)</li>
+            <li>IELTS / Spoken English</li>
+        </ul>
+    </section>
+
+    <!-- Gallery -->
+    <section class="gallery">
+        <h2>Our Activities</h2>
+        <div class="gallery-images">
+            <img src="vlog30.jpg" alt="Rock Garden Trip">
+            <img src="toppers.jpg" alt="Topper Banner">
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact">
-        <h2>📩 संपर्क करें</h2>
-        <form>
-            <input type="text" placeholder="आपका नाम" required>
-            <input type="email" placeholder="ईमेल" required>
-            <textarea placeholder="आपका संदेश" required></textarea>
-            <button type="submit">भेजें</button>
+    <!-- YouTube -->
+    <section class="youtube">
+        <h2>Watch Our Channel</h2>
+        <a href="https://youtube.com/@royalstar7" class="btn" target="_blank">🎬 Visit YouTube Channel</a>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="why-choose-us">
+        <h2>Why Choose Royal Star?</h2>
+        <div class="reasons">
+            <div class="reason">
+                <h3>✔️ Expert Trainers</h3>
+                <p>Experienced faculty with deep knowledge of computer & IELTS training.</p>
+            </div>
+            <div class="reason">
+                <h3>✔️ Practical Learning</h3>
+                <p>Hands-on training, real projects & regular practice sessions.</p>
+            </div>
+            <div class="reason">
+                <h3>✔️ Affordable Fees</h3>
+                <p>Best quality education at very reasonable cost for all students.</p>
+            </div>
+            <div class="reason">
+                <h3>✔️ 100% Support</h3>
+                <p>Complete guidance till you become job-ready or exam-qualified.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificate Download -->
+    <section class="certificate-download">
+        <h2>🧾 Certificate Download</h2>
+        <p>Students can download their certificates after successful course completion.</p>
+        <a href="#" class="btn">Download Now</a>
+    </section>
+
+    <!-- Map -->
+    <section class="location">
+        <h2>Visit Us</h2>
+        <iframe src="https://www.google.com/maps?q=Moga,Punjab&output=embed" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!-- Contact Form Button -->
+    <section class="popup-contact">
+        <button onclick="openForm()" class="btn">📩 Contact Us</button>
+    </section>
+
+    <!-- Contact Form -->
+    <div class="form-popup" id="contactForm">
+        <form class="form-container">
+            <h2>Contact Us</h2>
+            <label for="name"><b>Name</b></label>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <label for="email"><b>Email</b></label>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <label for="message"><b>Message</b></label>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send</button>
+            <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
         </form>
+    </div>
+
+    <!-- Contact Info -->
+    <section class="contact">
+        <h2>Contact Info</h2>
+        <p>Email: royalstarchannel@gmail.com</p>
+        <p>Instagram: <a href="https://www.instagram.com/royalstar.moga" target="_blank">@royalstar.moga</a></p>
+        <p>WhatsApp: <a href="https://wa.me/919914877984" target="_blank">+91 99148 77984</a></p>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>© 2025 Royal Star | सभी अधिकार सुरक्षित</p>
-        <div class="socials">
-            <a href="https://youtube.com/" target="_blank">YouTube</a>
-            <a href="https://instagram.com/" target="_blank">Instagram</a>
-        </div>
+        <p>&copy; 2025 Royal Star Institute | Moga, Punjab</p>
+        <p><a href="https://youtube.com/@royalstar7" target="_blank">YouTube</a> |
+            <a href="https://www.instagram.com/royalstar.moga" target="_blank">Instagram</a></p>
     </footer>
 
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/919914877984" class="whatsapp-float" target="_blank">💬 Chat on WhatsApp</a>
+
+    <!-- Top Button -->
+    <button onclick="topFunction()" id="topBtn" title="Go to top">⬆️</button>
+
+    <script>
+        function openForm() {
+            document.getElementById("contactForm").style.display = "block";
+        }
+
+        function closeForm() {
+            document.getElementById("contactForm").style.display = "none";
+        }
+        window.onscroll = function() {
+            document.getElementById("topBtn").style.display = window.scrollY > 300 ? "block" : "none";
+        };
+
+        function topFunction() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </body>
 
 </html>
